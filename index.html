@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boston Herald</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap-icons-1.10.4/">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <header class="container-fluid py-3 bg-light">
+    <div class="row fixed-top cabecero ">
+      <div class="col">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <!--lo que pone al lado del botoncito-->
+              <span class="navbar-toggler-icon"></span>
+              All sections
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header w-100">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">All sections</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="btn btn-primary btn-lg w-100" href="https://checkout.bostonherald.com/?g2i_source=website&g2i_medium=link&g2i_campaign=mg2nav&g2i_or_o=Internet&g2i_or_p=mg2nav&returnUrl=https%253A%252F%252Fwww.bostonherald.com%252F%253FnewUser%253Dtrue" role="button">Subscribe Now</a>
+                  </li>
+                  <li class="nav-item">
+                    <!--añadir simbolito de home-->
+                    <a class="nav-link active" aria-current="page" href="http://localhost:63342/Proyecto/index.html?_ijt=ig8cberj2heqh90rnu7dpc28qi#">Home Page</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      News
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/">News</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/local-news/">Local News</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/crime-public-safety/">Crime & Public Safety</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/tag/your-tax-dollars-at-work/">Your Tax Dollars At Work</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/massachusetts-news/">Massachussetts</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/national-news/">Nation</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/world-news/">World</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/business/">Business</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/health/">Health</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/opinion/columnists/">Columnist</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/traffic/">Traffic</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Opinion
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/opinion/">Opinion</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/opinion/editorials/">Editorials</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/opinion/letters/">Letters to the editor</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/submit-letter/">Submit a letter</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sports
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/">Sports</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/mlb/boston-red-sox/">Boston Red Sox</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/nfl/new-england-patriots/">New England Patriots</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/nba/boston-celtics/">Boston Celtics</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/nhl/boston-bruins/">Boston Bruins</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/college-sports/">College Sports</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/sports/high-school-sports/">High School Sports</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Politics
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/news/politics/">Politics</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/tag/donald-trump/">Donald Trump</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/tag/2020-election/">Election 2020</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/tag/state-house/">State House</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/tag/boston-city-hall/">Boston City Hall</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Entertainment
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/entertainment/">Entertainment</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/arts-culture/">Arts</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/movies/">Movies</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/television/">TV and Streaming</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/music/">Music and Concerts</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/local-events/">Local Events</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/fun-and-games/">Fun & Games</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/contest/">Contests</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/horoscope/">Horoscope</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/lottery/">Lottery</a></li>
+                      <li><a class="dropdown-item" href="https://comicskingdom.com/?utm_source=dfm">Comics</a></li>
+                      <li><a class="dropdown-item" href="https://puzzles.comicskingdom.com/?utm_source=dfm">Puzzles</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown mb-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lifestyle
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/">Lifestyle</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/food-beverage/">Restaurants Food & Drink</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/travel/">Travel</a></li>
+                      <li><a class="dropdown-item" href="https://www.bostonherald.com/things-to-do/style-fashion/">Fashion</a></li>
+                      <li><a class="dropdown-item" href="https://store.bostonherald.com/dept/boston-sunday-herald?cp=110559_110959_112844&utm_campaign=sunday-herald&utm_medium=referral&utm_source=ROP&utm_content=&utm_term=">Boston Herald Store</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class ="nav-item" href="https://www.bostonherald.com/tag/photo-gallery/">Photo</a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class ="nav-item" href="https://www.legacy.com/us/obituaries/bostonherald/browse">Obituaries</a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class ="nav-item" href="https://checkout.bostonherald.com/?g2i_source=website&g2i_medium=link&g2i_campaign=mg2nav&g2i_or_o=Internet&g2i_or_p=mg2nav&returnUrl=https%253A%252F%252Fwww.bostonherald.com%252Ftag%252Fphoto-gallery%252F%253FnewUser%253Dtrue">Subscribe</a>
+                  </li>
+
+                  <li class="nav-item mb-4">
+                    <a class ="nav-item" href="https://mng-prod.auth0.com/login?state=hKFo2SA3bTV4Tm5ESHdNdzU4RHcwMVBQTE1JYjZUMkpMSXlmRaFupWxvZ2luo3RpZNkgcU9CLThLUzFOdmNaZWNaZ1pJMk9mQmpGdlRHc211ejWjY2lk2SBOTGhOT21WMk5selUwbU9DbERNd09haWczZ3FMYkY4ZQ&client=NLhNOmV2NlzU0mOClDMwOaig3gqLbF8e&protocol=oauth2&prompt=select_account&audience=access-extension&initialScreen=none&scope=openid%20profile%20email%20offline_access&response_type=code&response_mode=query&nonce=YzFyeHBPTG83SDItdy5SaWo1U09WR2NrNHZqfmd0TS1JMnRQR3lUYmc2aA%3D%3D&redirect_uri=https%3A%2F%2Fwww.bostonherald.com%2Fcallback%3Fauth_redirect%3Dhttps%253A%252F%252Fwww.bostonherald.com%252Ftag%252Fphoto-gallery%252F&code_challenge=JdW8tW1lptHv1_hn3erJLzX1kWUzghQEdTukZB4m1MI&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTMuNiJ9">Log In</a>
+                  </li>
+                  <hr>
+
+                  <li class="nav-item align-content-center">Sign up for email newsletters</li>
+                  <li class="nav-item">
+                    <a class="btn btn-primary w-100" href="https://myaccount.bostonherald.com/bh/preference" role="button">Sign Up</a>
+
+                  </li>
+
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="col-auto">
+        <a class="btn btn-primary" href="https://checkout.bostonherald.com/?g2i_source=website&g2i_medium=link&g2i_campaign=mg2nav&g2i_or_o=Internet&g2i_or_p=mg2nav&returnUrl=https%253A%252F%252Fwww.bostonherald.com%252F%253FnewUser%253Dtrue" role="button">Subscribe</a>
+        <a class="btn btn-primary" href="https://mng-prod.auth0.com/login?state=hKFo2SBKaXVTY0RSWmNpRGcwWVJucmtqTldJdzRiQUgyRkJSRaFupWxvZ2luo3RpZNkgc3hmLU9kTThTbENvQTJ1aDB6c2FLWWp0ZDZpeFI5QnqjY2lk2SBOTGhOT21WMk5selUwbU9DbERNd09haWczZ3FMYkY4ZQ&client=NLhNOmV2NlzU0mOClDMwOaig3gqLbF8e&protocol=oauth2&prompt=select_account&audience=access-extension&initialScreen=none&scope=openid%20profile%20email%20offline_access&response_type=code&response_mode=query&nonce=SmhfTDAxeWVmZm5BbEdjNjlpckZucnRzandmZW5rZmZQTVoyLmNLXzVqNw%3D%3D&redirect_uri=https%3A%2F%2Fwww.bostonherald.com%2Fcallback%3Fauth_redirect%3Dhttps%253A%252F%252Fwww.bostonherald.com%252F&code_challenge=9jyzEMpv6ndMOHx6Jjjt4XkAZxYAxrNH2gAc353D30Y&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTMuNiJ9" role="button">Log in</a>
+        <button class="btn btn-light boton border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+          </button>
+        <div class="collapse w-100" id="collapseExample">
+          <div class="card card-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <div class="searchbar">
+              <input type="text" placeholder="Search">
+              <div class="icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<!--contenedor con el logo y el tiempo-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col">
+          <img src="images/logo.jpg" alt="Logo" class="img-fluid">
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    </div>
+
+
+    <!--contenedor con las cosas horizontales-->
+    <div class="container d-none d-md-block">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row hidden-xs">
+            <div class="col"></div> <!-- Espacio izquierdo -->
+            <div class="col-sm-12">
+              <div class="d-flex justify-content-between">
+                <a href="https://www.bostonherald.com/news/" class="mx-3 link">News</a>
+                <a href="https://www.bostonherald.com/opinion/" class="mx-3 link">Opinion</a>
+                <a href="https://www.bostonherald.com/sports/" class="mx-3 link">Sports</a>
+                <a href="https://www.bostonherald.com/news/politics/" class="mx-3 link">Politics</a>
+                <a href="https://www.bostonherald.com/things-to-do/entertainment/" class="mx-3 link">Entertainment</a>
+                <a href="https://www.bostonherald.com/things-to-do/" class="mx-3 link">Lifestyle</a>
+                <a href="https://www.bostonherald.com/tag/video/" class="mx-3 link">Multimedia/Video</a>
+                <a href="https://www.bostonherald.com/tag/photo-gallery/" class="mx-3 link">Photo</a>
+                <a href="https://www.legacy.com/obituaries/bostonherald/?_ga=2.81683799.1568707781.1680886428-1957812793.1680632439" class="mx-3 link">Obituaries</a>
+              </div>
+            </div>
+            <div class="col"></div> <!-- Espacio derecho -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="container d-none d-md-block">
+      <div class="row">
+        <div class="col-1 pr-0 align-self-center">
+          <span class="trending">TRENDING:</span>
+        </div>
+          <div class="col-10 d-flex  px-5">
+          <a  class="nav-link mx-2" href="https://www.bostonherald.com/sports/high-school-sports/">Read High School Sports</a>
+          <a  class="nav-link mx-2" href="bostonherald.com/tag/howie-carr/">Read Howie Carr</a>
+          <a  class="nav-link mx-2" href="https://www.bostonherald.com/tag/joe-battenfeld/">Read Battenfeld</a>
+          <a  class="nav-link mx-2" href="https://www.bostonherald.com/2023/01/03/massachusetts-public-payroll-your-tax-dollars-at-work-2022-database-home/">Your Tax Dollars At Work</a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+</div>
+
+
+<div class="main">
+  <div class="row row3">
+    <div class="col-md-6 col-xs-12 left-section">
+      <article class="article" id="big-article">
+        <a href="https://www.bostonherald.com/2023/04/09/howie-carr-meet-john-pigsley-aka-the-pigman-the-perfect-poster-boy-for-the-mbta/">
+
+        </a>
+        <div class="article-text" id="big-article-text">
+          <h2>
+            <a class="texto1" href="https://www.bostonherald.com/2023/04/09/howie-carr-meet-john-pigsley-aka-the-pigman-the-perfect-poster-boy-for-the-mbta/">Howie Carr: Meet John Pigsley, AKA the Pigman, The perfect poster boy for the MBTA
+              <img src="images/first-article.webp">
+            </a>
+          </h2>
+          <p>If you were a Hollywood director filming a movie about the MBTA, and you asked Central Casting to send over a bloated, corrupt hack who symbolized the endemic corruption of the T, John P. Pigsley would show up on the set.</p>
+        </div>
+      </article>
+      <hr>
+
+
+
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 flex-sm-column">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-12 my-2">
+              <img src="images/peq-article.jpg" class="img-cambia img-fluid">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+              <div class="article-text ">
+                <a class="art" href="#">
+                  <h4>New MBTA leader's former boss defends his overtime record following criticism</h4></a>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-xs-12 flex-sm-column">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-12 my-2">
+              <img src="images/peq2.webp" class="img-cambia img-fluid">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+              <div class="article-text ">
+                <a class="art" href="#">
+                  <h4>NFL notes: Is it possible for Bill Belichick and Mac Jones to mend fences?</h4></a>
+                  <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 flex-sm-column">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-12 my-2">
+              <img src="images/boba-fett.webp" class="img-cambia img-fluid">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+              <div class="article-text">
+                <a class="art" href="#">
+                  <h4>Crime Briefs: Boba Fett on the MBTA</h4></a>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 flex-sm-column">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-12 my-2">
+              <img src="images/BRUINSsc003.webp" class="img-cambia img-fluid">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+              <div class="article-text">
+                <a class="art" href="#">
+                  <h4>Bruins notch 62nd win, tie NHL record</h4></a>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    <div class="col-md-3 col-xs-12 right-section row5">
+      <h5>LATEST HEADLINES</h5>
+      <hr class="azul">
+      <div class="list-group list-group-flush">
+        <a class ="headline" href="#">Bruins notch 62nd win, tie NHL record</a>
+        <hr>
+        <a class ="headline" href="#">Boston gun violence concentrated in four neighborhoods</a>
+        <hr>
+        <a class ="headline" href="#">Boston 'Straight Pride Parade' organizer facing felony charge in Jan 6 Capitol riot</a>
+        <hr>
+        <a class ="headline" href="#">Battenfeld: Maura Healey must take action to protect vulnerable children</a>
+        <hr>
+        <a class ="headline" href="#">Lucas: Showdown on Beacon Hill</a>
+        <hr>
+        <a class ="headline" href="#">Ecuadorian faces deportation following charges in fatal crash</a>
+        <hr>
+        <a class ="headline" href="#">How did Jonh Pigsley get hired by Keolis? He was linked to NH bad-check case</a>
+        <br><br>
+        <div class="newsletter">
+          <p class="recom">Sign up for newsletter</p><br>
+          <a href="" type="button" class="btn btn-outline-primary">SIGN UP</a>
+
+          <br>
+          <p class="recom">Follow Us</p>
+          <div class="newsletter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
+            </svg>
+      </div>
+          </div>
+    </div>
+
+</div>
+
+    <div class="promotions div2 row3">
+      <h3> PROMOTIONS & SPECIALS <hr id="hr-rojo"></h3>
+      <img src="images/Promotions%20widget%20ad.jpg">
+      <img src="images/Poll%20image%20widget%20ad.jpg">
+      <a href="#">SEE ALL</a>
+    </div>
+  </div>
+
+  <div class="row row3">
+    <div class="col-md-8 col-xs-12 div2">
+      <h3 class="azulito">RECOMMENDED FOR YOU</h3>
+      <hr>
+      <div class="list-group list-group-flush">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 izq list-group">
+            <a class ="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+              </svg>
+              Jets visit with UAB running back prospect DeWayne McBride ahead of NFL Draft
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+              </svg>
+              Nets Notebook: Cam Johnson's poster dunk over Joel Embiid in vain, Spencer Dinwiddie mst step up
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+              </svg>
+              Battenfield: Social Security cuts and raising retirement age on the table in 2024 race
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-4-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+              </svg>
+              MBTA Green Line has delays on busy Marathon Monday, stranding exhausted runner who are faster than the T
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-5-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z"/>
+              </svg>
+              Josh Hart sprained his ankle during heroic playoff performance
+            </a>
+
+          </div>
+          <div class="col-md-6 col-xs-12 der list-group">
+            <a class ="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-6-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z"/>
+              </svg>
+              For Heat's Kevin Love this Milwaukee moment has been years in the making
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-7-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.37 5.11h3.972v.07L6.025 12H7.42l3.258-6.85V4.002H5.369v1.107Z"/>
+              </svg>
+              Sweeping slider helps Hayden Wesneski get on track in Chicago Cubs' 10-1 win: 'Definitely a start you can build onto'
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-8-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-5.03 1.803c0-1.248-.943-1.84-1.646-1.992v-.065c.598-.187 1.336-.72 1.336-1.781 0-1.225-1.084-2.121-2.654-2.121-1.57 0-2.66.896-2.66 2.12 0 1.044.709 1.589 1.33 1.782v.065c-.697.152-1.647.732-1.647 2.003 0 1.39 1.19 2.344 2.953 2.344 1.77 0 2.989-.96 2.989-2.355Zm-4.347-3.71c0 .739.586 1.255 1.383 1.255s1.377-.516 1.377-1.254c0-.733-.58-1.23-1.377-1.23s-1.383.497-1.383 1.23Zm-.281 3.645c0 .838.72 1.412 1.664 1.412.943 0 1.658-.574 1.658-1.412 0-.843-.715-1.424-1.658-1.424-.944 0-1.664.58-1.664 1.424Z"/>
+              </svg>
+              Bill Belichick again doesn`t commit to Mac Jones as Patriots' starting quarterback
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-9-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.223 4.146c2.104 0 3.123-1.464 3.123-4.3 0-3.147-1.459-4.014-2.97-4.014-1.63 0-2.871 1.02-2.871 2.73 0 1.706 1.171 2.667 2.566 2.667 1.06 0 1.7-.557 1.934-1.184h.076c.047 1.67-.475 3.023-1.834 3.023-.71 0-1.149-.363-1.248-.72H5.258c.094.908.926 1.798 2.52 1.798Zm.118-3.972c.808 0 1.535-.528 1.535-1.594s-.668-1.676-1.56-1.676c-.838 0-1.517.616-1.517 1.659 0 1.072.708 1.61 1.54 1.61Z"/>
+              </svg>
+              Dear Abby: Family has had enough of drunk uncle
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.012 4.158c1.858 0 2.96-1.582 2.96-3.99V7.84c0-2.426-1.079-3.996-2.936-3.996-1.864 0-2.965 1.588-2.965 3.996v.328c0 2.42 1.09 3.99 2.941 3.99Z"/>
+              </svg>
+              Dear Abby: Long friendship broken by caring act
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row my-2">
+    <div class="col-lg-3 col-xs-12 my-2">
+      <h4>SPORTS ></h4>
+      <img src="images/041723bruinsms003.webp" class="img-fluid"><br>
+      <a class="recom" href="https://www.bostonherald.com/2023/04/17/bruins-knock-off-panthers-for-1-0-series-lead/">Bruins knock off Panthers for 1-0 series lead</a>
+      <p>The Bruins captured the first of what they hope will be 16 wins on the way to Stanley Cup over the next two months on Monday at the Garden.</p>
+      <hr>
+      <p class="letras">Bruins notebook: Patrice Bergeron sits out Game 1 vs. Panthers</p>
+      <hr>
+      <p class="letras">Red Sox feel pain in the rain, can't quite rally in 5-4 loss to Angels</p>
+      <hr>
+      <p class="letras">Evans Chebet captures second straight Boston Marathon title</p>
+    </div>
+    <div class="col-lg-3 col-xs-12 my-2">
+      <h4>OPINION COLUMNISTS ></h4>
+      <img src="images/AP23104823280255.webp" class="img-fluid w-100"><br>
+      <a class="recom" href="https://www.bostonherald.com/2023/04/17/robbins-biden-celebrates-america-with-visit-to-ireland/">Robbins: Biden celebrates America with visit to Ireland</a>
+      <p>The bond between America and Ireland is a powerful one. It has been forged in part by the vibrant role Irish Americans have played in the building of this country.</p>
+      <hr>
+      <p class="letras">Perrino: Campus disruptions don't count as free speech</p>
+      <hr>
+      <p class="letras">Editorial: Income-based billing an idea that should stay in Calif.</p>
+      <hr>
+      <p class="letras">Letters to the editor</p>
+    </div>
+    <div class="col-lg-3 col-xs-12 my-2">
+      <h4>LOCAL NEWS ></h4>
+      <img src="images/bus.webp" class="img-fluid w-100"><br>
+      <a class="recom" href="https://www.bostonherald.com/2023/04/18/college-baseball-team-makes-a-run-for-it-after-bus-goes-up-in-flames/">College baseball team makes a run for it after bus goes up in flames</a>
+      <p>A blown tire sparked a blaze on a bus transporting the Fisher College baseball team back home that sent the players and coaches running to safety faster than stealing a base.</p>
+      <hr>
+      <p class="letras">Pioneers Run Crew at the Boston Marathon was surrounded by police in Newton: 'This is racially targeted overpolicing'</p>
+      <hr>
+      <p class="letras">OBF: Until banner 18 is raised, questions will follow Boston Celtics</p>
+      <hr>
+      <p class="letras">High school roundup/scores: Norwood rides combines no-hitter to victory over Braintree</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-9 col-sm-12">
+      <h4>PHOTOS AND VIDEOS  ></h4>
+      <hr>
+      <div class="row ">
+        <div class="col-lg-8 col-sm-12">
+          <img src="images/0418-NWS-BHR-L-marathonnl023.webp" class="img-fluid">
+          <h2>The 127th running of the Boston Marathon</h2>
+        </div>
+        <div class="col-lg-4 col-sm-12 row">
+          <div class="col-5">
+            <img class="img-fluid" src="images/041723bruinsms013.jpg">
+          </div>
+          <div class="col-7">
+             <a href="">
+               <p class="recom">Gallery: Bruins easily win Game 1 of the playoffs against Panthers</p>
+             </a>
+          </div>
+          <hr>
+          <div class="col-5">
+            <img class="img-fluid" src="images/041723bruinsms013.jpg">
+          </div>
+          <div class="col-7">
+            <a href="">
+              <p class="recom">Gallery: Bruins easily win Game 1 of the playoffs against Panthers</p>
+            </a>
+          </div>
+          <hr>
+          <div class="col-5">
+            <img class="img-fluid" src="images/041723bruinsms013.jpg">
+          </div>
+          <div class="col-7">
+            <a href="">
+              <p class="recom">Gallery: Bruins easily win Game 1 of the playoffs against Panthers</p>
+            </a>
+          </div>
+          <hr>
+          <div class="col-5">
+            <img class="img-fluid" src="041723bruinsms013.jpg">
+          </div>
+          <div class="col-7">
+            <a href="">
+              <p class="recom">Gallery: Bruins easily win Game 1 of the playoffs against Panthers</p>
+            </a>
+          </div>
+          <hr>
+          <div class="col-5">
+            <img class="img-fluid" src="images/041723bruinsms013.jpg">
+          </div>
+          <div class="col-7">
+            <a href="">
+              <p class="recom">Gallery: Bruins easily win Game 1 of the playoffs against Panthers</p>
+            </a>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <hr>
+
+      <p style="text-align: center" class="recom">SHOW MORE PHOTOS</p>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-9 col-sm-12">
+      <h4>BUSINESS ></h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <img src="images/AP23107672850477.jpg" class="img-fluid ms-2">
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h5>DeSantis ups ante in Disney fight, floats nearby prison</h5>
+          <p>At a news conference in Lake Buena Vista, DeSantis also said lawmarkers would take away...</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-9 col-sm-12">
+      <h4>ENTERTAINMENT ></h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <img src="images/AP23107672850477.jpg" class="img-fluid ms-2">
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h5>DeSantis ups ante in Disney fight, floats nearby prison</h5>
+          <p>At a news conference in Lake Buena Vista, DeSantis also said lawmarkers would take away...</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-9 col-sm-12">
+      <h4>OPINION ></h4>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <img src="images/AP23107672850477.jpg" class="img-fluid ms-2">
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h5>DeSantis ups ante in Disney fight, floats nearby prison</h5>
+          <p>At a news conference in Lake Buena Vista, DeSantis also said lawmarkers would take away...</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+          <hr>
+          <p class="recom"> New push on for US-run free tax file system</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row row3">
+    <div class="col-md-8 col-xs-12 div2">
+      <h3 class="azulito">TRENDING NATIONALLY</h3>
+      <hr>
+      <div class="list-group list-group-flush">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 izq list-group">
+            <a class ="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+              </svg>
+              Upstate NY woman, 20, fatally shot after turning down wrong driveway
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+              </svg>
+              They spent their lives teaching California's children. Now, they say they're spending their retirement paying for it
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+              </svg>
+              McDonald's is making changes to its Big Mac and other burguers
+            </a>
+
+          </div>
+          <div class="col-md-6 col-xs-12 der list-group">
+            <a class ="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-4-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+              </svg>
+              DeSantis says lawmakers will reassert control of Reedy Creek, jokes about building prison
+            </a>
+            <a class="recom" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-5-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z"/>
+              </svg>
+              A 94-year-old CT resident got an eviction notice. He blames unreachable landlords who refused to approve a new lease
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer>
+  <div class="row w-100">
+    <div class="col-4" id="footer-izq">
+        <a href="#">
+          <img class="img-fluid" id="logopeq" src="images/logo.jpg">
+        </a>
+        <hr>
+        <a class="tipo1" href="#">SIGN UP FOR NEWSLETTERS</a>
+        <br>
+        <a class="tipo" href="#">e-Edition</a>
+        <br>
+        <a class="tipo" href="#">Send a News Tip</a>
+        <hr>
+        <a class="tipo1" href="#">CONTACT US</a>
+        <br>
+        <a class="tipo" href="#">Boston Herald Store/Back Copies</a>
+        <br>
+        <a class="tipo" href="#">Work With Us</a>
+        <br>
+        <a class="tipo" href="#">Legal Notices</a>
+        <br>
+        <a class="tipo" href="#">Privacy Policy</a>
+        <br>
+        <a class="tipo" href="#">Accessibility</a>
+
+
+
+    </div>
+    <div class="col-4" id="footer-medio">
+      <hr>
+      <a class="tipo1" href="#">CLASSIFIEDS</a>
+      <br>
+      <a class="tipo" href="#">Contests</a>
+      <br>
+      <a class="tipo" href="#">Fun & Games</a>
+      <br>
+      <a class="tipo" href="#">Jobs</a>
+      <hr>
+      <a class="tipo1" href="#">BUSINESS DIRECTORY</a>
+      <br>
+      <a class="tipo" href="#">Network Advertising</a>
+      <br>
+      <a class="tipo" href="#">Adtaxi Solutions</a>
+    </div>
+
+    <div class="col-4">
+      <hr>
+      <a class="tipo1 mb-3" href="#">FOLLOW US</a>
+      <div class="icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+          <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
+        </svg>
+      </div>
+      <!--añadir lo de seguir en las redes-->
+      <a class="btn btn-primary btn-lg w-100 my-2" href="https://checkout.bostonherald.com/?g2i_source=website&g2i_medium=link&g2i_campaign=mg2nav&g2i_or_o=Internet&g2i_or_p=mg2nav&returnUrl=https%253A%252F%252Fwww.bostonherald.com%252F%253FnewUser%253Dtrue" role="button">Subscribe Now</a>
+    </div>
+
+    <hr>
+    <div class="row d-inline-block">
+      <a href="">Terms of use</a>
+      <a href="">Cookie Policy</a>
+      <a href="">California Notice at Collection</a>
+      <a href="">Notice of Financial Incentive</a>
+      <a href="">Arbitration</a>
+    </div>
+
+  </div>
+
+
+</footer>
+
+</body>
+</html>

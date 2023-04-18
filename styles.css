@@ -1,0 +1,168 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+.link {
+    font-weight: bold;
+    color: black; /* Color de texto inicial */
+    text-decoration: none; /* Quitamos el subrayado por defecto */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.link:hover {
+    color: #0a53be; /* Color de texto al pasar el ratón */
+    text-decoration: underline;
+
+}
+.btn-light{
+    background: #f8f9fa;
+}
+.btn-light:hover{
+    background:#f8f9fa ;
+}
+.nav-item{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-item:hover{
+    color:black;
+}
+.btn-primary:hover{
+    text-decoration: underline;
+}
+.dropdown-item{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #0a53be;
+}
+
+.trending {
+    font-weight: bold;
+    color: #0a53be;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.img-cambia{
+    width:100%;
+    lenght:80%;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    background-color:#f8f9fa ;
+    padding:40px;
+
+}
+.logopeq{
+    width:50%;
+}
+h3{
+    color:red;
+}
+.headlines-item{
+    color:black;
+    font-weight: bold;
+}
+.headline{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tipo1{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tipo1:hover{
+    text-decoration: underline;
+}
+
+.tipo{
+    color:black;
+    text-decoration: none;
+}
+.texto1{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+.art{
+    color:black;
+    text-decoration: none;
+}
+.img-cambia{
+    width: 300px;
+    height: 200px;
+}
+
+.azul{
+    border: 2px solid blue;
+
+}
+.right-section{
+    text-align: center;
+}
+.azulito{
+    color:blue;
+}
+.div2{
+    margin-top: 20px;
+}
+.recom{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.recom:hover{
+    color:blue;
+}
+.row3{
+    padding:20px;
+}
+
+.row5{
+    padding:40px;
+}
+.letras{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.letras:hover{
+    color:blue;
+}
+.newsletter{
+    background-color: #fff4be;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.cabecero{
+    background-color: whitesmoke;
+}
